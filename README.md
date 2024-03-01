@@ -1,3 +1,7 @@
+# Updates
+
+This fork of https://github.com/shunnmugam/cas-authentication was updated on March 1, 2024 to remove a dependency on an outdated `xml2js` library. No other changes have been made. 
+
 # Express CAS Authentication
 
 This is a CAS authentication library designed to be used with an Express server.
