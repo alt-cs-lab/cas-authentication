@@ -1,6 +1,6 @@
 {
   "name": "node-cas-authentication",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "A CAS authentication library designed to be used as middleware for an Express server.",
   "keywords": [
     "cas",
@@ -12,22 +12,22 @@
     "middleware",
     "express"
   ],
-  "homepage": "https://github.com/shunnmugam/cas-authentication",
+  "homepage": "https://github.com/alt-cs-lab/cas-authentication",
   "bugs": {
-    "url": "https://github.com/shunnmugam/cas-authentication/issues"
+    "url": "https://github.com/alt-cs-lab/cas-authentication/issues"
   },
   "license": "MIT",
-  "author": "Kyle Maguire <kylepixel@gmail.com>",
+  "author": "Advancing Learning and Teaching in Computer Science Lab <altcs@ksu.edu>",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/shunnmugam/cas-authentication.git"
+    "url": "https://github.com/alt-cs-lab/cas-authentication.git"
   },
   "dependencies": {
-    "xml2js": "^0.4.8"
+    "xml2js": "^0.6.2"
   },
   "devDependencies": {
-    "express": "^4.12.3",
-    "express-session": "^1.11.1"
+    "express": "^4.18.3",
+    "express-session": "^1.18.0"
   }
 }
