@@ -474,7 +474,7 @@ CASAuthentication.prototype._handleTicket = function(req, res, next) {
                     if (this.session_info) {
                         req.session[ this.session_info ] = attributes || {};
                     }
-                    res.session.save(err => {
+                    req.session.save(err => {
                         if (err) {
                             return next(err);
                         } 
