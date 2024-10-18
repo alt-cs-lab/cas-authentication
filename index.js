@@ -1,6 +1,7 @@
 var url           = require('url'),
     http          = require('http'),
     https         = require('https'),
+    path          = require('path'),
     parseXML      = require('xml2js').parseString,
     XMLprocessors = require('xml2js/lib/processors');
 
@@ -419,7 +420,7 @@ CASAuthentication.prototype._handleTicket = function(req, res, next) {
     if (['1.0', '2.0', '3.0'].indexOf(this.cas_version) >= 0){
         requestOptions.method = 'GET';
         requestOptions.path = url.format({
-            pathname: this.cas_path + this._validateUri,
+            pathname: path.join(this.cas_path, this._validateUri),
             query: {
                 service: this.service_url + url.parse(req.url).pathname,
                 ticket: req.query.ticket
@@ -445,7 +446,7 @@ CASAuthentication.prototype._handleTicket = function(req, res, next) {
 
         requestOptions.method = 'POST';
         requestOptions.path = url.format({
-            pathname: this.cas_path + this._validateUri,
+            pathname: path.join(this.cas_path, this._validateUri),
             query : {
                 TARGET : this.service_url + url.parse(req.url).pathname,
                 ticket: ''
